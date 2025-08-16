@@ -1,9 +1,6 @@
 var navigation = document.createElement("div")
 const bar = [{name:'intro',function: null},{name:'categories', function: null},{name:'community', function: null}]
-var logo = document.createElement("div")
-logo.onclick = location.reload(true)
-logo.textContent = 'P-ARTICIPATE'
-navigation.appendChild(logo)
+navigation.innerHTML = `<div onclick="location.reload(true)>P-ARTICIPATE</div>"`
 for(let i in bar){
     bar[i].element = document.createElement("div")
     bar[i].element.textContent = bar[i].name.toLocaleUpperCase(0)
