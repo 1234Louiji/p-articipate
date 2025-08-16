@@ -1,4 +1,6 @@
 var navigation = document.createElement("div")
+navigation.id = "navigationBar"
+navigation.className = "navigationBar"
 const bar = [{name:'intro',function: null},{name:'categories', function: null},{name:'community', function: null}]
 navigation.innerHTML = `<div onclick='window.location.replace("https://1234louiji.github.io/p-articipate/")'>P-ARTICIPATE</div>`
 for(let i in bar){
