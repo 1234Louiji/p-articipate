@@ -3,10 +3,41 @@
   <head>
     <meta charset="UTF-8">
     <title>Homepage</title>
-    <link rel="stylesheet" href="mainCSS.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      .animates1{
+        margin: 2cm;
+        text-align: center;
+        opacity: 0;
+        filter: blur(10px);
+        transition: all 0.5s ease-out;
+      }
+      .animates1.show{
+        transform: translateY(2cm);
+        opacity: 1;
+        filter: blur(0);
+      }
+    </style>
   </head>
   <body>
-    <div id="navigate"></div>
-    <script src="navigationBar.js"></script>
+    <!--This one is for the top ones, the info/categories/community-->
+    <div id="head"></div>
+    <div id="content">
+      <h1 class="animates1">Welcome</h1>
+      <div  class="animates1">And this is</div>
+      <div class="animates1">P-ARTICIPATE</div>
+      <div class="animates1">Where you can pursue your dreams</div>
+    </div>
+    <script>
+      $(document).ready(function(){
+        let i = 0;
+        $(".animates1").each(function(){
+          i += 2;
+          setTimeout(() => {
+            $(this).addClass("show")
+          }, i*200);
+        })
+      })
+    </script>
   </body>
 </html>
