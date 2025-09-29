@@ -9,10 +9,10 @@
         overflow-x: hidden;
       }
       #content{
-        margin-left: -200px;
+        margin-left: -150px;
       }
       .animates1{
-        text-align: center;
+        text-align: left;
         opacity: 0;
         filter: blur(10px);
         transition: all 0.5s ease-out;
@@ -22,13 +22,17 @@
         opacity: 1;
         filter: blur(0);
       }
+      #content, div{
+        font-size: 20;
+        font-weight: 400;
+      }
     </style>
   </head>
   <body>
     <!--This one is for the top ones, the info/categories/community-->
     <div id="head"></div>
     <div id="content">
-      <h1 class="animates1">Welcome</h1>
+      <h1 class="animates1" style="text-align: center;">Welcome</h1>
       <div  class="animates1">And this is</div>
       <div class="animates1">P-ARTICIPATE</div>
       <div class="animates1">Where you can pursue your dreams</div>
