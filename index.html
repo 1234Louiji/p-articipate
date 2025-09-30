@@ -28,6 +28,14 @@
         font-size: 20;
         font-weight: 400;
       }
+      #arrow{
+        margin: 30px;
+   
+      }
+      #arrow:hover{
+        transform: translateY(-20);  
+        transition: all 0.4s ease-out;
+      }
     </style>
   </head>
   <body>
@@ -39,7 +47,7 @@
       <div class="animates1">P-ARTICIPATE</div>
       <div class="animates1">Where you can pursue your dreams</div>
     </div>
-    <i class="fa-solid fa-angle-down" style="margin: 10px;"></i><span>  Scroll down</span>
+    <i class="fa-solid fa-angle-down" id="arrow"></i><span>  Scroll down</span>
     <script>
       $(document).ready(function(){
         let i = 0;
